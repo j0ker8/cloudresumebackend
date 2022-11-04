@@ -31,6 +31,13 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       StageName: test
+      Domain:
+        DomainName: resumeapi.shardulyadav.link
+        CertificateArn: arn:aws:acm:us-east-1:026802451096:certificate/9bc38034-5be0-4b5d-85b9-a80489707dee
+        EndpointConfiguration: EDGE
+        Route53:
+          HostedZoneId: Z08829369Z6IOILDPOIH
+        BasePath:
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
