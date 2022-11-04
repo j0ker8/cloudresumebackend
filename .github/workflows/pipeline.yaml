@@ -10,10 +10,10 @@ on:
       - 'feature**'
 
 env:
-  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AKIAQMPMM6KMEK4U56FU }}
-  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.sB2qHqvAB/AI1JcJwc2E6ydjv7k2kbzRbpcehers }}
-  SAM_TEMPLATE: .
-  TESTING_STACK_NAME: ResumeBackendDEV
+  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AKIAQMPMM6KMB7QAACJJ }}
+  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.Xgjm2S54IV4zurfq9rFc8A01VSfdCIA8R1kYuz1X }}
+  SAM_TEMPLATE: template.yaml
+  TESTING_STACK_NAME: ResumeSAMDEV
   TESTING_PIPELINE_EXECUTION_ROLE: arn:aws:iam::026802451096:role/aws-sam-cli-managed-dev-pipe-PipelineExecutionRole-9PPH33ODFXD4
   TESTING_CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::026802451096:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionR-VURBKASKQL9H
   TESTING_ARTIFACTS_BUCKET: aws-sam-cli-managed-dev-pipeline-artifactsbucket-liibem1ocdfh
@@ -22,7 +22,7 @@ env:
   # testing "sam package" and "sam deploy" commands.
   # TESTING_IMAGE_REPOSITORY = '0123456789.dkr.ecr.region.amazonaws.com/repository-name'
   TESTING_REGION: us-east-2
-  PROD_STACK_NAME: ResumeBackendPROD
+  PROD_STACK_NAME: ResumeSAMProd
   PROD_PIPELINE_EXECUTION_ROLE: arn:aws:iam::026802451096:role/aws-sam-cli-managed-prod-pip-PipelineExecutionRole-T6EV1DBT17DL
   PROD_CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::026802451096:role/aws-sam-cli-managed-prod-CloudFormationExecutionR-686BRJT8J0D5
   PROD_ARTIFACTS_BUCKET: aws-sam-cli-managed-prod-pipeline-artifactsbucket-of2tqa7t5p0k
