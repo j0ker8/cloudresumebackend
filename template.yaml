@@ -40,6 +40,6 @@ Outputs:
     Description: "API Gateway endpoint URL for Prod stage for Hello World function"
     Value: !Sub "https://${ResumeAPI}.execute-api.${AWS::Region}.amazonaws.com/getCount/test/"
   ResumeLambdaFunction:
-    Description: "Resume Lambda Function ARN"
+    Description: "Resume Function ARN"
     Value: !GetAtt ResumeLambdaFunction.Arn
   
